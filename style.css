@@ -1,0 +1,58 @@
+*{
+    /*box sizing border box: changes how width and height of elements are calculated -- , the padding and borders are included within the specified width and height.*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: "Helvetica", sans-serif;
+}
+
+.container{
+    background-color: white;
+    max-width: 600px;
+    /*margin 100px for top and bottom, auto for left/right making it equal*/
+    margin: 100px auto;
+    /*padding - space inside*/
+    padding: 20px;
+    /* 0 and 0 for x and y. 10px for bluriness.*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    /*round corners*/
+    border-radius: 10px;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    /*10px for up+down, 0 for left+right*/
+    margin: 10px 0; 
+    width: 100%;
+}
+
+button{
+    background-color: aqua;
+    padding: 10px;
+    border: none;
+    cursor: pointer; /*so when we hover it we see a pointing hand in mouse*/
+    margin: 10px 0;
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color .2s ease;
+}
+
+button:hover{
+    background-color: greenyellow;   
+}
+
+#total{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
